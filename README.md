@@ -1,2 +1,2 @@
-# EFA-player-raitings
-Rate players on Estonian Football Association website.
+# EJL-player-raitings
+Rate players on Estonian Football Association website (www.jalgpall.ee).
