@@ -27,10 +27,12 @@ players <- function(html, team = "Tartu Ülikool Fauna") {
   subs <- subs[-1]
 
   # check which substitutes played
-  lapply(subs, function(sub) {
+  plyd_subs <- lapply(subs, function(sub) {
     name <- html_nodes(sub, "a") %>%
        html_text()
     name[length(html_nodes(sub, "span.in"))]
   }) %>%
     unlist()
+
+  c(lnp, plyd_subs)
 }
