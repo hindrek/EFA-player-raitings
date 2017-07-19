@@ -2,7 +2,7 @@ library(rvest)
 library(magrittr)
 
 
-team <- "EMÜ SK"
+team <- "Tartu Ülikool Fauna"
 
 url <- "http://jalgpall.ee/voistlused/protocol/69204" # readline("URL: ")
 html <- read_html(url)
