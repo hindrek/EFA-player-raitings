@@ -1,4 +1,4 @@
-source("../extract_data.R")
+source("extract_data.R")
 
 
 library(shiny)
