@@ -4,7 +4,7 @@ library(magrittr)
 
 team <- "Tartu Ülikool Fauna"
 
-url <- "http://jalgpall.ee/voistlused/protocol/69204" # readline("URL: ")
+url <- "http://jalgpall.ee/voistlused/protocol/69204"
 html <- read_html(url)
 
 home <- html %>%
