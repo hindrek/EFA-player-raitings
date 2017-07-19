@@ -2,7 +2,7 @@ library(rvest)
 library(magrittr)
 
 
-players <- function(url, team = "Tartu Ülikool Fauna") {
+players <- function(url, team) {
   # home or away team
   home <- read_html(url) %>%
     html_nodes("#page > div > div > div > div.head > div.teams > div:nth-child(1) > p") %>%
