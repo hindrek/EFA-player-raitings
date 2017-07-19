@@ -34,5 +34,9 @@ players <- function(html, team = "Tartu Ülikool Fauna") {
   }) %>%
     unlist()
 
-  c(lnp, plyd_subs)
+  # output
+  list(
+    game = paste(home, "-", away),
+    players = c(lnp, plyd_subs)
+  )
 }
