@@ -4,8 +4,7 @@ library(magrittr)
 
 team <- "Tartu Ülikool Fauna"
 
-url <- "http://jalgpall.ee/voistlused/protocol/69204"
-html <- read_html(url)
+html <- read_html("http://jalgpall.ee/voistlused/protocol/69645")
 
 home <- html %>%
   html_nodes("#page > div > div > div > div.head > div.teams > div:nth-child(1) > p") %>%
@@ -29,3 +28,4 @@ subs <- html %>%
   html_text()
 
 plyrs <- c(lnp, subs)
+
